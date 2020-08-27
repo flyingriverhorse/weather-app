@@ -43,7 +43,7 @@ function getWeather(latitude, longitude){
     const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
     let api = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${key}`;
     
-    fetch(proxyUrl + apiUrl)
+    fetch(proxyUrl + api)
         .then(function(response){
             let data = response.json();
             return data;
